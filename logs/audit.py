@@ -31,12 +31,12 @@ class Audit(metaclass=Singleton):
             print(
                 '[' + date_format + '] - [' + self.project + '] - '
                 + self.key + ' - ' + message + '\n')
-            if not os.path.isfile("crawler.log"):
-                with open("crawler.log", "w") as f:
+            if not os.path.isfile("consultas.log"):
+                with open("consultas.log", "w") as f:
                     f.write('[' + date_format + '] - [' + self.project
                             + '] - ' + self.key + ' - ' + message + '\n')
             else:
-                with open("crawler.log", "a") as f:
+                with open("consultas.log", "a") as f:
                     f.write('[' + date_format + '] - [' + self.project
                             + '] - ' + self.key + ' - ' + message + '\n')
         except Exception as exc:
