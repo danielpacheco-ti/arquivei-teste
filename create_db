@@ -1,0 +1,7 @@
+CREATE SCHEMA `arquivei` ;
+
+CREATE TABLE `arquivei`.`xml_notas` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `access_key` VARCHAR(200) NULL,
+  `value` LONGTEXT NULL,
+  PRIMARY KEY (`id`));
