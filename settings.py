@@ -1,7 +1,7 @@
 import os
 
 PROJECT = "arquivei-teste-api"
-VERSION = "1.0.0"
+VERSION = "1.0.2"
 CRYPTO_KEY = "arquivei-consulta"
 
 ####################### API #######################

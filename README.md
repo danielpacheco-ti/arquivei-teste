@@ -77,9 +77,16 @@ Classe que irá controlar a busca e inserção das chaves resgatadas da API Arqu
 - Todas as informações são criptografadas antes de transitar para o banco e são descriptografadas para leitura.
 - O controlador do DB é Singleton para evitar diversas instâncias e conexões com o banco.
 
+### Outros
+- Testes unitários:
+Executar arquivo tests.py
+
+```
+python tests.py
+```
+
 ### Melhorias
 Para as próximas versões:
-- Testes unitários
 - Verificação de chaves duplicadas antes da inserção em banco.
 
 

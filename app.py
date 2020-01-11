@@ -3,7 +3,6 @@ from flask_restful import Api, Resource
 
 from connections.db_controller import DbController
 from logs.audit import Audit
-from main import Main
 from settings import X_API_KEY
 from utils.crypt import Crypt
 
@@ -30,3 +29,4 @@ class Notes(Resource):
 
 api.add_resource(Notes, "/notes/<string:note>")
 app.run(debug=True)
+
